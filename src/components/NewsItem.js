@@ -11,7 +11,9 @@ export class NewsItem extends Component {
     return (
       <div className="my-3 mx-3">
           <div className="card">
-            <span class="position-absolute top-0 translate-middle badge rounded-pill bg-secondary" style={{left: '90%', zIndex: '1'}}>{source}</span>
+            <div style={{display: 'flex', justifyContent: 'flex-end', position: 'absolute', right: '0'}}>
+            <span className="badge rounded-pill bg-secondary">{source}</span>
+            </div>
             <img src={imageUrl ? imageUrl : "https://i.gadgets360cdn.com/large/reliance_jio_reuters_1608007225500.jpg" } className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
